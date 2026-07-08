@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const DEFAULT_TITLE = 'Jackson Macharia | Data Analyst & Analytics Engineer';
+const DEFAULT_TITLE = 'Jackson Macharia | Data Analyst · BI Developer';
 
 export const usePageTitle = (title) => {
   useEffect(() => {

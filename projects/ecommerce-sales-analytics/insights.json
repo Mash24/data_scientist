@@ -1,0 +1,68 @@
+{
+  "total_revenue": 13221498.11,
+  "total_orders": 96478,
+  "avg_order_value": 137.04,
+  "top_states": [
+    {
+      "state": "SP",
+      "customers": 39156,
+      "orders": 40501,
+      "revenue": 5067633.16
+    },
+    {
+      "state": "RJ",
+      "customers": 11917,
+      "orders": 12350,
+      "revenue": 1759651.13
+    },
+    {
+      "state": "MG",
+      "customers": 11001,
+      "orders": 11354,
+      "revenue": 1552481.83
+    }
+  ],
+  "top_categories": [
+    {
+      "category": "health_beauty",
+      "orders": 8647,
+      "revenue": 1233131.72
+    },
+    {
+      "category": "watches_gifts",
+      "orders": 5495,
+      "revenue": 1166176.98
+    },
+    {
+      "category": "bed_bath_table",
+      "orders": 9272,
+      "revenue": 1023434.76
+    }
+  ],
+  "repeat_purchase_rate_pct": 3.0,
+  "customers_at_risk_pct": 80.23,
+  "top_payment_type": "credit_card",
+  "top_payment_pct": 78.34,
+  "reviews_by_delivery": [
+    {
+      "delivery_bucket": "0-7 days",
+      "reviews": 33539,
+      "avg_review_score": 4.41
+    },
+    {
+      "delivery_bucket": "8-14 days",
+      "reviews": 36190,
+      "avg_review_score": 4.29
+    },
+    {
+      "delivery_bucket": "15-21 days",
+      "reviews": 15264,
+      "avg_review_score": 4.1
+    },
+    {
+      "delivery_bucket": "22+ days",
+      "reviews": 10831,
+      "avg_review_score": 3.01
+    }
+  ]
+}

@@ -21,6 +21,6 @@ export const PROCESS_STEPS = [
     step: '04',
     title: 'Deliver & iterate',
     description:
-      'Ship dashboards or reports, validate with stakeholders, and refine definitions as the business learns.',
+      'Deliver dashboards or reports, validate with stakeholders, and refine definitions as the business learns.',
   },
 ];

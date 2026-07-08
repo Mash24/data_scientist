@@ -18,3 +18,32 @@
     @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
   }
 }
+
+@layer components {
+  .dashboard-grid {
+    background-image:
+      linear-gradient(to right, rgb(148 163 184 / 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(148 163 184 / 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  :is(.dark) .dashboard-grid {
+    background-image:
+      linear-gradient(to right, rgb(71 85 105 / 0.25) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(71 85 105 / 0.25) 1px, transparent 1px);
+  }
+
+  .dashboard-panel {
+    @apply bg-white dark:bg-slate-900;
+  }
+
+  .dashboard-tile {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-black/20;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motion-safe\:animate-marquee {
+      animation: none;
+    }
+  }
+}

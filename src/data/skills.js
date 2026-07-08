@@ -50,14 +50,14 @@ export const SKILL_CATEGORIES = [
   },
   {
     id: 'tools',
-    title: 'Tools & Code',
-    description: 'Supporting tools for analytics delivery.',
+    title: 'Analysis & scripting',
+    description: 'Python, notebooks, and documentation for reproducible analytics.',
     skills: [
       'Python (pandas)',
-      'Git & GitHub',
       'Jupyter notebooks',
-      'CSV / API data ingestion',
-      'Documentation & data dictionaries',
+      'Excel / Google Sheets',
+      'Data dictionaries',
+      'CSV & structured data imports',
     ],
   },
 ];

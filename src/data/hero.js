@@ -1,17 +1,11 @@
 export const HERO = {
-  eyebrow: 'Data Analyst · BI · Analytics Engineering',
-  headline: 'I turn messy data into',
-  headlineAccent: 'clear decisions.',
-  subhead:
-    'BSc Statistics and BSc Computer Science. I model metrics in SQL, build BI dashboards, and document definitions teams can trust.',
+  eyebrow: 'Data Analyst · BI · Analytics',
+  headline: 'I turn messy business data',
+  headlineMid: 'into dashboards executives actually use.',
+  headlineAccent: '',
+  subhead: 'SQL-first analysis · KPI definitions · Power BI + Looker Studio reporting.',
   ctas: [
     { label: 'View case studies', sectionId: 'case-studies-section', primary: true },
-    { label: 'Get in touch', sectionId: 'contact-section', primary: false },
-  ],
-  highlights: [
-    { label: 'SQL & PostgreSQL', value: 'Core' },
-    { label: 'Statistics', value: 'Degree' },
-    { label: 'Dashboards', value: 'BI focus' },
-    { label: 'Pipelines', value: 'AE-ready' },
+    { label: 'Download resume', href: '/resume.pdf', primary: false },
   ],
 };

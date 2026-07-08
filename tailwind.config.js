@@ -18,6 +18,15 @@ export default {
           950: '#0b1220',
         },
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 28s linear infinite',
+      },
       typography: {
         DEFAULT: {
           css: {

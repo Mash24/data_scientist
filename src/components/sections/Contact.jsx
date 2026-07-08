@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { Loader2, Mail, Send } from 'lucide-react';
+import { Loader2, Github, Linkedin, Mail, Send } from 'lucide-react';
 import { SITE } from '../../data/site';
 import {
   FORMSPREE_ENDPOINT,
@@ -36,21 +36,27 @@ const Contact = () => {
   return (
     <section id="contact-section" className="py-16 sm:py-20 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={reducedMotion ? false : { opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-2xl mb-10"
-        >
-          <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">
-            <Mail className="h-4 w-4" />
-            Contact
-          </span>
-          <h2 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl dark:text-white">
-            Let&apos;s talk about your data
-          </h2>
-          <p className="mt-4 text-slate-600 dark:text-slate-400">{SITE.availability}</p>
-        </motion.div>
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+              Contact
+            </p>
+            <h2 className="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">
+              Hire me for data & BI (freelance + contract)
+            </h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{SITE.availability}</p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {['Data Analyst', 'BI Developer', 'Analytics Engineer'].map((role) => (
+              <span
+                key={role}
+                className="rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-bold text-brand-800 dark:text-brand-300"
+              >
+                {role}
+              </span>
+            ))}
+          </div>
+        </div>
 
         <div className="grid gap-8 lg:grid-cols-5">
           <motion.form
@@ -145,24 +151,43 @@ const Contact = () => {
           >
             <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
               <p className="font-semibold text-slate-900 dark:text-white">Direct email</p>
-              <a href={`mailto:${SITE.email}`} className="mt-1 block text-brand-600 dark:text-brand-400">
+              <a href={`mailto:${SITE.email}`} className="mt-1 flex items-center gap-2 text-brand-600 dark:text-brand-400">
+                <Mail className="h-4 w-4" />
                 {SITE.email}
               </a>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+              <p className="font-semibold text-slate-900 dark:text-white">Profiles</p>
+              <div className="mt-2 flex flex-col gap-2">
+                <a
+                  href={SITE.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+                <a
+                  href={SITE.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400"
+                >
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </a>
+              </div>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
               <p className="font-semibold text-slate-900 dark:text-white">Location</p>
               <p className="mt-1">{SITE.location}</p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-              <p className="font-semibold text-slate-900 dark:text-white">Also see</p>
-              <a
-                href={SITE.engineeringPortfolioUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-1 block text-brand-600 dark:text-brand-400"
-              >
-                Software engineering portfolio →
-              </a>
+              <p className="font-semibold text-slate-900 dark:text-white">Open to</p>
+              <p className="mt-1">
+                Data analyst, BI developer, and analytics engineer work — as full-time roles or freelance/contract delivery.
+              </p>
             </div>
           </motion.aside>
         </div>

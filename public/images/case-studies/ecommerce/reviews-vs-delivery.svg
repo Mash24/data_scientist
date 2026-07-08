@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" font-family="system-ui,Segoe UI,sans-serif"><rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="40" fill="#334155" font-size="20" font-weight="700">Review score vs delivery time</text>
+<text x="40" y="62" fill="#64748b" font-size="13">Lower scores when delivery exceeds 21 days</text>
+<rect x="80" y="111" width="170" height="229" rx="8" fill="#059669"/>
+<text x="165" y="102.68" fill="#334155" font-size="14" font-weight="700" text-anchor="middle">4.41</text>
+<text x="165" y="362" fill="#64748b" font-size="11" text-anchor="middle">0-7 days</text>
+<rect x="270" y="117" width="170" height="223" rx="8" fill="#059669"/>
+<text x="355" y="108.92000000000002" fill="#334155" font-size="14" font-weight="700" text-anchor="middle">4.29</text>
+<text x="355" y="362" fill="#64748b" font-size="11" text-anchor="middle">8-14 days</text>
+<rect x="460" y="127" width="170" height="213" rx="8" fill="#059669"/>
+<text x="545" y="118.80000000000001" fill="#334155" font-size="14" font-weight="700" text-anchor="middle">4.1</text>
+<text x="545" y="362" fill="#64748b" font-size="11" text-anchor="middle">15-21 days</text>
+<rect x="650" y="183" width="170" height="157" rx="8" fill="#059669"/>
+<text x="735" y="175.48000000000002" fill="#334155" font-size="14" font-weight="700" text-anchor="middle">3.01</text>
+<text x="735" y="362" fill="#64748b" font-size="11" text-anchor="middle">22+ days</text>
+</svg>

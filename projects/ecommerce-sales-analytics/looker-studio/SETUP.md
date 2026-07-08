@@ -2,16 +2,17 @@
 
 Use Looker Studio for a **single-page public embed** on the portfolio case study.
 
-## 1. Export SQL results to Google Sheets
+## 1. Use pre-built exports
 
-Run these DuckDB queries and export CSV → upload to Google Drive as Sheets:
+CSV files are already in `exports/` (run `python scripts/run_pipeline.py` to refresh).
 
-| Sheet tab | SQL file |
+| Sheet tab | CSV file |
 |-----------|----------|
-| `monthly_revenue` | `sql/duckdb/01_revenue_overview.sql` |
-| `category_revenue` | `sql/duckdb/02_category_performance.sql` |
-| `state_revenue` | `sql/duckdb/03_revenue_by_state.sql` |
-| `payment_mix` | `sql/duckdb/06_payment_mix.sql` |
+| `monthly_revenue` | `exports/monthly_revenue.csv` |
+| `category_revenue` | `exports/category_revenue.csv` |
+| `state_revenue` | `exports/state_revenue.csv` |
+| `payment_mix` | `exports/payment_mix.csv` |
+| `repeat_customers` | `exports/repeat_customers.csv` |
 
 ## 2. Create report
 

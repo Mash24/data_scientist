@@ -1,6 +1,6 @@
 export const ABOUT_BIO = [
-  'I combine a BSc in Statistics with software engineering experience to work across the analytics stack: exploratory analysis, metric design, BI delivery, and SQL-first data modeling.',
-  'I am not positioning as a research-only data scientist. I focus on practical analytics — answering business questions, defining KPIs correctly, and shipping dashboards and data models that stakeholders actually use.',
+  'I am a data professional with a BSc in Statistics and hands-on experience in SQL analysis, BI dashboards, and metric design for real business questions.',
+  'I work across the analytics stack: exploratory analysis, KPI definitions, stakeholder reporting, and SQL-first data modeling. My goal is practical insight — not vanity charts or research for its own sake.',
 ];
 
 export const ABOUT_EDUCATION = [
@@ -14,7 +14,7 @@ export const ABOUT_EDUCATION = [
     degree: 'BSc Computer Science',
     school: 'University of the People',
     period: 'Expected 2026',
-    detail: 'Algorithms, databases, software systems',
+    detail: 'Databases, data structures, analytical computing',
   },
 ];
 
@@ -32,7 +32,7 @@ export const ABOUT_STRENGTHS = [
     description: 'Dashboards designed for executives and operators, not vanity visuals.',
   },
   {
-    title: 'Engineering overlap',
-    description: 'Can work with engineers on schemas, APIs, and refresh pipelines when needed.',
+    title: 'Data storytelling',
+    description: 'Translate analysis into summaries executives and teams can act on.',
   },
 ];

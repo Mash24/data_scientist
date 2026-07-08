@@ -1,0 +1,5 @@
+delivery_bucket,reviews,avg_review_score
+0-7 days,33539,4.41
+8-14 days,36190,4.29
+15-21 days,15264,4.1
+22+ days,10831,3.01

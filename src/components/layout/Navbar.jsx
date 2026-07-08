@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to="/" className="font-bold text-slate-900 dark:text-white">
           {SITE.name}
           <span className="mt-0.5 block text-xs font-medium text-brand-600 dark:text-brand-400">
-            Analytics
+            Data · BI · Analytics
           </span>
         </Link>
 

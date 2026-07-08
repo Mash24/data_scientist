@@ -15,19 +15,18 @@ Case study #1 for the analytics portfolio. Uses the **[Brazilian E-Commerce Publ
 | Looker Studio embed | `looker-studio/SETUP.md` |
 | Portfolio write-up | `../../src/data/case-studies/content/ecommerce-sales-analytics.js` |
 
-## Quick start (DuckDB — fastest)
-
-1. Download the Kaggle dataset and extract CSVs into `data/raw/`.
-2. Install [DuckDB CLI](https://duckdb.org/docs/installation/) or use the DuckDB VS Code extension.
-3. Run load script, then queries:
+## Quick start (recommended)
 
 ```bash
 cd projects/ecommerce-sales-analytics
-duckdb analytics.duckdb < sql/duckdb/00_load_tables.sql
-duckdb analytics.duckdb < sql/duckdb/01_revenue_overview.sql
+python scripts/run_pipeline.py
 ```
 
-4. Export key query results to CSV for Looker Studio / Power BI import.
+This loads CSVs from `data/raw/`, writes `exports/*.csv` and `insights.json` — no DuckDB or pandas required.
+
+Then build Power BI from `exports/` (see `power-bi/IMPORT_FROM_EXPORTS.md`) and Looker Studio from the same files.
+
+## Quick start (DuckDB)
 
 ## Quick start (PostgreSQL)
 

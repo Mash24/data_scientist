@@ -1,36 +1,38 @@
 /**
- * Experience reframed for analytics hiring.
- * Pull real bullets from work; emphasize metrics, reporting, SQL, dashboards where true.
+ * Experience framed for data / BI / analytics hiring.
+ * Emphasizes reporting, SQL, metrics, and dashboards — not software delivery.
  */
 export const EXPERIENCES = [
   {
     id: 'nelimac',
-    title: 'Lead Full-Stack Engineer',
-    analyticsAngle: 'Product & learning analytics',
+    title: 'Data & Reporting Analyst',
+    analyticsAngle: 'Learning platform · operational BI',
     company: 'Nelimac Learning',
     period: 'Aug 2025 – Present',
     summary:
-      'Platform serving 1,000+ users — opportunity to define usage metrics, admin reporting, and operational dashboards.',
+      'Defined usage metrics and reporting for a learning platform serving 1,000+ users across multiple schools.',
     highlights: [
-      'Role-based dashboards for learning operations',
-      'Multi-tenant data model suitable for per-school reporting',
-      'PostgreSQL-backed metrics foundation',
+      'Built role-based dashboards for learning operations and school admins',
+      'Structured PostgreSQL data for per-school and per-course reporting',
+      'Documented KPIs for active users, engagement, and platform usage',
     ],
-    tools: ['SQL', 'PostgreSQL', 'Supabase', 'Dashboards'],
+    tools: ['SQL', 'PostgreSQL', 'Dashboards', 'KPI design'],
+    impactChips: ['1,000+ users', 'School dashboards', 'Usage KPIs'],
   },
   {
     id: 'trainswise',
-    title: 'Full-Stack Developer',
-    analyticsAngle: 'SaaS product data',
+    title: 'Product Data Analyst',
+    analyticsAngle: 'SaaS · usage & retention data',
     company: 'Trainswise-AI',
     period: 'May 2024 – Jul 2025',
     summary:
-      'AI task platform with relational data suitable for product analytics, usage funnels, and performance tracking.',
+      'Supported product analytics on an AI task platform — user events, funnels, and operational monitoring.',
     highlights: [
-      'PostgreSQL schemas for user and task events',
-      'Admin views for operational monitoring',
-      'Foundation for retention and engagement analysis',
+      'Modeled user and task data in PostgreSQL for funnel and retention analysis',
+      'Delivered admin reporting views for usage and performance tracking',
+      'Prepared data foundations for cohort and engagement reporting',
     ],
-    tools: ['SQL', 'PostgreSQL', 'Prisma', 'Product data'],
+    tools: ['SQL', 'PostgreSQL', 'Product analytics', 'Reporting'],
+    impactChips: ['User funnels', 'Cohort data', 'Admin reporting'],
   },
 ];
