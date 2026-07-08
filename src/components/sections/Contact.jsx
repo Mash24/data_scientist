@@ -131,11 +131,11 @@ const Contact = () => {
                   ) : (
                     <Send className="h-4 w-4" />
                   )}
-                  Send message
+                  {FORMSPREE_ENDPOINT ? 'Send message' : 'Open email draft'}
                 </button>
                 {!FORMSPREE_ENDPOINT && (
                   <p className="text-xs text-slate-500">
-                    No Formspree ID set — submit opens your email client.
+                    This will open your default email app with the message prefilled.
                   </p>
                 )}
               </div>
